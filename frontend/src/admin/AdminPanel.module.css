@@ -1,0 +1,129 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+  scrollbar-width: 10px;
+  overflow: auto;
+}
+
+h2,
+h3,
+h4 {
+  color: #4db8ff;
+}
+
+h1 {
+  text-align: center;
+  color: #ffffff;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  background-color: #333333;
+  border: 1px solid #444;
+  color: #e0e0e0;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #4db8ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #3a9bbf;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  box-sizing: border-box;
+}
+
+button:disabled {
+  background-color: #777777;
+  cursor: not-allowed;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  max-height: fit-content;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+h4 {
+  color: #8eb8ff;
+}
+
+.choice-container {
+  margin: 10px 0;
+  padding: 15px;
+  background-color: #222222;
+  border-radius: 8px;
+}
+
+.choice-container input {
+  margin-bottom: 10px;
+}
+
+.choice-button {
+  margin-top: 10px;
+  display: flex;
+  background-color: #4db8ff;
+  padding: 8px 12px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.choice-button:hover {
+  background-color: #3a9bbf;
+}
+
+.choiceButtons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.scene-list {
+  margin-top: 20px;
+  background-color: #333333;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.scene-item {
+  margin-bottom: 10px;
+}
+
+.scene-item button {
+  background-color: #0077cc;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.scene-item button:hover {
+  background-color: #0066b3;
+}

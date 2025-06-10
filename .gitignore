@@ -1,0 +1,33 @@
+# Ignore node_modules for both frontend and backend
+Frontend/node_modules/
+Backend/node_modules/
+node_modules/
+# Ignore build directories (for React)
+Frontend/build/
+
+# Ignore environment variable files
+Frontend/.env
+Backend/.env
+
+# Ignore logs and debugging files
+*.log
+*.env
+
+# Ignore OS-specific files (Mac/Windows)
+.DS_Store
+Thumbs.db
+
+# Ignore package-lock.json if using Yarn in the frontend (optional, depending on preference)
+Frontend/package-lock.json
+
+# Ignore compiled JavaScript files (if not using TypeScript)
+Frontend/dist/
+Backend/dist/
+
+# Ignore test coverage or temp files
+Frontend/coverage/
+Backend/coverage/
+# Ignore any temp or backup files created by editors (e.g., VSCode, vim)
+*.swp
+*.bak
+*.tmp

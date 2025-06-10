@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "axios": "^1.9.0",
+    "feather-icons": "^4.29.2",
+    "lucide-react": "^0.508.0"
+  }
+}
