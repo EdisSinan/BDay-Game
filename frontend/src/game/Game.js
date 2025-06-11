@@ -187,11 +187,47 @@ export default function Game() {
             </button>
           ) : (
             <>
+              <h1 className={styles.introTitle}>A MAGICAL BIRTHDAY</h1>
               <div className={styles.introTextWrapper}>
                 <div className={styles.introText}>
-                  {}
-                  <p>EDISE NE ZABORAVI DODAT TEKST ZA IGRICU EDISE NE ZABORAVI DODAT TEKST ZA IGRICU EDISE FALI TI TEKST ZA INTRO EDISE 
-                    TEKST EDISEEE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
+
+                  <p>
+                    A long time ago...<br />
+                    In a neighborhood not so far away...<br /><br />
+
+                    🎂✨ A BIRTHDAY AWAKENS ✨🎂<br /><br />
+
+                    It is a time of joy and wonder.<br />
+                    The galaxy has aligned for a very special event...<br />
+                    <strong>ALMA'S BIRTHDAY.</strong><br /><br />
+
+                    Across the lands, preparations are being made.<br />
+                    Gifts are wrapped with precision.<br />
+                    Adventures wait silently in the shadows,<br />
+                    ready to leap into action.<br /><br />
+
+                    From the bustling lights of a <strong>Carnival Planet</strong>,<br />
+                    to the heights of the <strong>Adventure Park Cliffs</strong>,<br />
+                    and the quiet serenity of the <strong>Beach Moon of Relaxara</strong>,<br />
+                    Alma’s day is about to unfold —<br />
+                    not with blasters, but with surprises, laughter, and perhaps... cake.<br /><br />
+
+                    Her path will be shaped by choices.<br />
+                    Will she explore the sparkling game stalls?<br />
+                    Swing across the jungle ropes like a true explorer?<br />
+                    Or sip coffee under twin suns, pondering the mysteries of the day?<br /><br />
+
+                    Every step, every game, every moment matters.<br />
+                    For this is no ordinary birthday...<br /><br />
+
+                    <strong>This is the Birthday of Destiny.</strong><br />
+                    And Alma is the Chosen One.<br /><br />
+
+                    Prepare yourself.<br />
+                    The journey begins now.
+                  </p>
+
+
                 </div>
               </div>
               <button
