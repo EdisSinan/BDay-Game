@@ -55,13 +55,19 @@ export default function Game() {
   useEffect(() => {
     if (!showIntro) {
       const redirected = sessionStorage.getItem("skipIntroOnce");
-      if (redirected) {
-        sessionStorage.removeItem("skipIntroOnce");
-        loadScene("GameStands");
-      } else {
-        loadScene("start");
-      }
-    }
+      const wasBeach = sessionStorage.getItem("isBeach");
+     if (redirected && wasBeach === "true") {
+  sessionStorage.removeItem("skipIntroOnce");
+  sessionStorage.removeItem("isBeach");
+  loadScene("beachWalk");
+  setBackgroundImage("/images/beachWalk.jpg")
+} else if (redirected) {
+  sessionStorage.removeItem("skipIntroOnce");
+  sessionStorage.removeItem("isBeach");
+  loadScene("GameStands");
+} else {
+  loadScene("start");
+}}
   }, [showIntro]);
 
   useEffect(() => {
@@ -100,6 +106,10 @@ export default function Game() {
       return;
     }
 
+       if (choice.action === "loadGame_SandTicTacToe") {
+      window.location.href = "/tictactoe";
+      return;
+    }
     if (choice.action === "loadGame_Match4") {
       window.location.href = "/match4";
       return;

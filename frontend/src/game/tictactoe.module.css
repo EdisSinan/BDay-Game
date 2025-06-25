@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  width: 100vw;
+  height: 100vh;
+  background-color: #0d1b2a;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0d1b2a;
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #ff9800;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.status {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 180px);  /* bigger tiles */
+  grid-template-rows: repeat(3, 180px);
+  gap: 12px;
+}
+
+.cell {
+  border: 3px solid #8d775f;
+  border-radius: 12px;
+  font-size: 5rem;
+  color: rgba(0, 0, 0, 0.5);  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3); /* slight emboss effect */
+}
+
+.cell:hover {
+  transform: scale(1.05);
+  filter: brightness(1.1);
+}
+
+
+.cell:hover {
+  background-color: #415a77;
+}
+
+.filled {
+  cursor: default;
+}
+
+.resetButton {
+  margin-top: 30px;
+  padding: 15px 40px;
+  font-size: 1.5rem;
+  background-color: #ff9800;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+}
+
+.resetButton:hover {
+  transform: scale(1.1);
+}
+.buttonContainer {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.backButton, .beachButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.backButton {
+  background-color: #ccc;
+}
+
+.beachButton {
+  background-color: #fca311;
+  color: white;
+}
